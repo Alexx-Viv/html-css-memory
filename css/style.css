@@ -8,10 +8,10 @@
 
 /* General */
 
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .container {
@@ -36,7 +36,7 @@ body {
 /* Main */
 
 .row {
-  margin-bottom: 30px;
+  margin-bottom: 5%;
 }
 
 .col {
@@ -52,15 +52,90 @@ body {
 
 .card {
   height: 100%;
-  background-image: url(../img/pattern.png);
+  background-color: white;
   background-position: center;
-  background-size: contain;
-  box-shadow:  5px 5px 5px #a0aeb1;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position-y: 25%;
+  background-position-x: center;
+  box-shadow: 5px 5px 5px #a0aeb1;
   border-radius: 10px;
 }
 
+/* Baloon */
+.baloon {
+  background-image: url(../img/noun_air_balloon_3134741.png);
+}
+.baloon::after {
+  content: "Baloon";
+  color: #e61986;
+  font-size: 36px;
+  padding-left: 20%;
+  line-height: 340px;
+}
+
+/* Tractor */
+.tractor {
+  background-image: url(../img/noun_Tractor_3134797.png);
+}
+.tractor::after {
+  content: "Tractor";
+  color: #e67918;
+  font-size: 36px;
+  padding-left: 20%;
+  line-height: 340px;
+}
+
+/* Cruise */
+.cruise {
+  background-image: url(../img/noun_Cruise_Ship_3134824.png);
+}
+.cruise::after {
+  content: "Cruise";
+  color: #e94040;
+  font-size: 36px;
+  padding-left: 20%;
+  line-height: 340px;
+}
+
+/* Bicycle */
+.bicycle {
+  background-image: url(../img/noun_Bicycle_3134821.png);
+}
+.bicycle:after {
+  content: "Bicycle";
+  color: #186ae6;
+  font-size: 36px;
+  padding-left: 20%;
+  line-height: 340px;
+}
+
+/* Submarine */
+.submarine {
+  background-image: url(../img/noun_Submarine_3134738.png);
+}
+.submarine:after {
+  content: "Submarine";
+  color: #2fa051;
+  font-size: 36px;
+  padding-left: 10%;
+  line-height: 340px;
+}
+
+.tram {
+    background-image: url(../img/noun_Tram_3134750.png);
+  }
+  .tram:after {
+    content: "Tram";
+    color: #f8e748;
+    font-size: 36px;
+    padding-left: 30%;
+    line-height: 340px;
+  }
+
+
 /* Footer */
-.credits{
-    text-align: center;
-    font-size: 20px;
+.credits {
+  text-align: center;
+  font-size: 20px;
 }
