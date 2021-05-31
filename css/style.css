@@ -1,28 +1,61 @@
 /* Reset */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Nerko One', cursive;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nerko One", cursive;
 }
 
 /* General */
-.container{
-    width: 65%;
-    margin: auto;
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
-body{
-    background-color: #ADD8E6;
+.container {
+  width: 65%;
+  margin: auto;
+}
+
+body {
+  background-color: #add8e6;
 }
 
 /* Header */
-.title{
-    border: 1px solid black;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 2px 2px #A0AEB1;
-    color: white;
-    font-size: 42px;
-    margin: 50px 0px;
+.title {
+  border: 1px solid black;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #a0aeb1;
+  color: white;
+  font-size: 42px;
+  margin: 50px 0px;
+}
+
+/* Main */
+
+.row {
+  margin-bottom: 30px;
+}
+
+.col {
+  float: left;
+  height: 250px;
+  width: calc((100% / 4) - 1.5%);
+  margin-right: 2%;
+}
+
+.col:last-child {
+  margin-right: 0px;
+}
+
+.card {
+  height: 100%;
+  background-image: url(../img/pattern.png);
+  background-position: center;
+  background-size: contain;
+  box-shadow: 2px 2px #a0aeb1;
+  border-radius: 10px;
 }
